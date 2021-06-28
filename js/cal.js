@@ -73,32 +73,36 @@ del.addEventListener("click", ()=>{
 })
 
 submit.addEventListener("click", ()=>{
-    box = input1;
-    const a = parseFloat(input1.value);
-    const b = input2.value;
-    const c = parseFloat(input3.value);
-    let ans = 0;
-    switch(b){
-        case "+":
-            ans = a + c;
-            break;
-        case "-":
-            ans = a - c;
-            break;
-        case "*":
-            ans = a * c;
-            break;
+    if(input1.value && input2.value && input3.value ){
+        box = input1;
+        const a = parseFloat(input1.value);
+        const b = input2.value;
+        const c = parseFloat(input3.value);
+        let ans = 0;
+        switch(b){
+            case "+":
+                ans = a + c;
+                break;
+            case "-":
+                ans = a - c;
+                break;
+            case "*":
+                ans = a * c;
+                break;
 
-        case "/":
-            ans = a / c;
-            break;
-        case "%":
-            ans = a % c;
-            break;
+            case "/":
+                ans = a / c;
+                break;
+            case "%":
+                ans = a % c;
+                break;
+        }
+        result.innerText = `${a} + ${c} = ${ans}`;
+        value = "";
+        form.reset();
+    }else{
+        result.innerText = "Enter Value";
     }
-    result.innerText = `${a} + ${c} = ${ans}`;
-    value = "";
-    form.reset();
     
 
     
