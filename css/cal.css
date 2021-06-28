@@ -28,7 +28,10 @@ input{
     border: none;
     font-size:xx-large;
 }
-input[type='text']{
+#num1. #num2{
+    width: 40%;
+}
+#operator{
     width: 20%;
 }
 
