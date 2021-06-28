@@ -17,7 +17,7 @@ body{
 }
 .displayNumbers{
     height: 60%;
-
+    padding: 10px;
 }
 form{
     height: 100%;
