@@ -1,0 +1,74 @@
+body{
+    background-image: linear-gradient(90deg, #ffee82, #ffa3d3);
+    font-size: large;
+}
+.outer{
+    height: 80vh;
+    width: 30vw;
+    background-color: white;
+    margin: 10vh auto;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.display{
+    height: 30%;
+    width: 100%;
+    background-color: white;
+    
+}
+.displayNumbers{
+    height: 60%;
+
+}
+form{
+    height: 100%;
+}
+input{
+    height: 100%;
+    width: 38%;
+    border: none;
+    font-size:xx-large;
+}
+input[type='text']{
+    width: 20%;
+}
+
+.result{
+    background-color: rgb(243, 243, 243);
+    height: 40%;
+    text-align: right;
+    padding: 0 10px;
+}
+#result{
+    height: 100%;
+}
+.operation{
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+    height: 20%;
+    margin: 0;
+}
+.item{
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    background-image: linear-gradient(135deg, #ffee82, #ffa3d3);
+    cursor: pointer;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+@media (max-width: 500px){
+    .outer{
+        width: 90%;
+        
+    }
+}
