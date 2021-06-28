@@ -97,7 +97,7 @@ submit.addEventListener("click", ()=>{
                 ans = a % c;
                 break;
         }
-        result.innerText = `${a} + ${c} = ${ans}`;
+        result.innerText = `${a} ${b} ${c} = ${ans}`;
         value = "";
         form.reset();
     }else{
