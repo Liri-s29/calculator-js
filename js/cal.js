@@ -73,7 +73,7 @@ del.addEventListener("click", ()=>{
 })
 
 submit.addEventListener("click", ()=>{
-    
+    box = input1;
     const a = parseFloat(input1.value);
     const b = input2.value;
     const c = parseFloat(input3.value);
@@ -96,9 +96,10 @@ submit.addEventListener("click", ()=>{
             ans = a % c;
             break;
     }
-    result.innerText = ans;
+    result.innerText = `${a} + ${c} = ${ans}`;
     value = "";
-    box = input1;
+    form.reset();
+    
 
     
 })

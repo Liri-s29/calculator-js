@@ -28,8 +28,8 @@ input{
     border: none;
     font-size:xx-large;
 }
-#num1. #num2{
-    width: 40%;
+#num1, #num2{
+    width: 35%;
 }
 #operator{
     width: 20%;
