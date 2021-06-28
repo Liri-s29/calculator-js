@@ -23,6 +23,8 @@ input.forEach((inp)=>{
 reset.addEventListener("click",()=>{
     form.reset();
     result.innerHTML = "";
+    value = "";
+    box = input1;
 })
 
 document.addEventListener('click',(e)=>{
@@ -45,9 +47,14 @@ document.addEventListener('click',(e)=>{
 })
 item.forEach((item)=>{
     item.addEventListener("click",()=>{
+        if(item.innerText == "Neg"){
+            box.value = "-" + box.value;
+            value = "-" + value;
+        }else{
+            value += item.innerText;
+            box.value = value;
+        }
         
-        value += item.innerText;
-        box.value = value;
     })
 })
 
@@ -67,9 +74,9 @@ del.addEventListener("click", ()=>{
 
 submit.addEventListener("click", ()=>{
     
-    const a = parseInt(input1.value);
+    const a = parseFloat(input1.value);
     const b = input2.value;
-    const c = parseInt(input3.value);
+    const c = parseFloat(input3.value);
     let ans = 0;
     switch(b){
         case "+":
@@ -91,6 +98,7 @@ submit.addEventListener("click", ()=>{
     }
     result.innerText = ans;
     value = "";
+    box = input1;
 
     
 })
